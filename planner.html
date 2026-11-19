@@ -81,20 +81,22 @@
 
 
 
-<!--Goal Planner Form My Form Control Size for enter goal and sumbit it or write my goal planer
-I used id I give name "mygoals" so that my javecript know  where its and 
+<!--Goal Planner Form My Form Control Size for
+ enter goal and sumbit it or write my goal planer
+I used id I give name "mygoals" so that my javecript know where its and 
 I used anothe id for "createplanbutton" for the button to that say cretae 
 "createplanbutton" and when he clik on it after enter what is the goals he will get 
-what I suggesting   and also the d-block mx-auto  make the thing in the center, also
-I used class="text-center" to make my text in the center   -->
+what I suggesting and also the d-block mx-auto make the thing in the center, also
+I used class="text-center" to make my text in the center also
+on input create id called "mygoals" -->
 
 <div class="container mt-3">
   <div id="entergoal" class="entergoal"></div>
   <h2 class="text-center">My Goal Planner </h2>
   <p class="text-center">What is one goal you want to achieve?</p>
   <form > 
-    <input type="text" class="form-control form-control-lg" placeholder="enter your goal..."required>
-    <button type="button" class="btn btn-primary d-block mx-auto"">create my goal plan </button> 
+    <input type="text" id="mygoals" class="form-control form-control-lg" placeholder="enter your goal..."required>
+    <button type="button" id="createplanbutton" class="btn btn-primary d-block mx-auto">create my goal plan </button> 
     <p id="createmygoal" class="mt-3"></p>
   </form>
 </div>
@@ -102,7 +104,6 @@ I used class="text-center" to make my text in the center   -->
 <!-- my  form commennts where they can write mesaage and send  what need to 
  to improve -->
 <div class="container mt-3">
-  <div id="commentsonme" class="commentsonme"></div>
   <h2>Get in touch with me </h2>
   <p> have questions , suggestions, and more...</p>
   <form action="/action_page.php">
