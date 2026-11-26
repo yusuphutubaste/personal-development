@@ -59,7 +59,13 @@ createButton.addEventListener("click", function () {
     //  the .includes("health") this  checks whether the visitor's goal contains the 
     // word "health" so it just check for example here :  the user typed 
     // I want better health this will match yes because of it cheeck it 
-    // also   //
+    // also outputArea this variable that connects JavaScript to an HTML 
+    // element on my webpage so in other words, JavaScript finds the HTML
+    //  element with the ID createmygoal. and this is where my
+    //  suggestions will appear.  also .innerHTML tells JavaScript to place HTML 
+    // content inside an existing HTML element  for example this 
+    // <h4>Suggested Health Plan:</h4> Creates a heading that says "Suggested
+    //  Health Plan:"and displays it inside my HTML element with the ID "createmygoal //
 
   } else if (userGoal.includes("health")) {
     outputArea.innerHTML = `
@@ -92,4 +98,75 @@ createButton.addEventListener("click", function () {
   }
 });
 // my comments sections for vistoer to write and send message //
+
+// first find  the html elements using the Ids that I create that I give or 
+// the one  that  name it the id that i give name and each my id in html must
+// match the id inside getElementbyId().//
+
+// need find the from first now this is for find my form I also give it a name //
+
+const visitorform = document.getElementById("visitorform");
+
+// now this find the text area where visitors write their comments
+// so first I need find  where vistoer write their commnets here and the id 
+// comments is on my html  and the second I need find the button //
+const visitorComment = document.getElementById("comment");
+
+// also this finds the submit button inside my form //
+
+const submitButton = document.getElementById("submitButton");
+
+// also finds the empty paragraph where my response message will appear.
+const submitOutput = document.getElementById("entersubmit");
+
+// submit time now //
+visitorform.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const usercomment = visitorComment.value.trim();
+  if (usercomment === "") {
+    submitOutput.innerHTML = `
+    <p class="text-danger">
+     Please enter your comment first!
+     </p>`;
+    }
+    else {
+    // Display a thank-you message.
+    submitOutput.innerHTML = `
+    <p class="text-success">
+     Thank you for getting in touch with me!
+     Your message has been received.
+     </p>
+      `;
+     // Clear the comment box after submission.
+    visitorComment.value = "";
+    }
+});
+
+
+// now above here is my code for commnets form and firs 
+// start by find the  html elements using their ids that I give in theme such as 
+// visitorForm ,comment,submitButton,entersubmit therefore, 
+// getElementsByID will go and get each Id  . also  I have 
+// addEventListener:
+// This tells JavaScript to listen for an action.
+// In this case, it listens for the visitor to submit the form.
+// also I have preventDefault():
+// This prevents the browser from automatically
+// reloading or navigating to another page.
+//  again I have the .value:
+// This gets the text that the visitor typed
+// inside my comment box.
+// therefore, I have .trim():
+// This removes extra spaces at the beginning
+// and end of the visitor's comment. I have the 
+// .innerHTML:
+// This displays a warning message inside
+// my HTML paragraph with the ID "entersubmit".
+//  also Display a thank-you message. when the if the vistors enter
+// the comments  //
+
+// throught this form comments I learned that  what id  
+// you give the in html its need also be exatuly the same in
+// javacript in onder they can communicate  all togather and work together need 
+// //
 
