@@ -51,11 +51,7 @@ padding and a smaller font size) */
   .sidenav a {font-size: 18px;}
 }
 
-/* Make the hamburger menu bigger */
-.menu-icon {
-    font-size: 35px;
-    cursor: pointer;
-}
+
 
 * {
   box-sizing: border-box;

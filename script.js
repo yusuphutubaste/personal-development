@@ -85,7 +85,7 @@ createButton.addEventListener("click", function () {
     // this will be on botton and this  does 
     // not care what the user writes ,it works for
     //  any text they enter that didn't match my
-    // specific keywords down here  //
+    // specific keywords down here  this like general suggestions  //
   } else {
     outputArea.innerHTML = `
       <h4>Suggested Plan for "${goalInput.value}":</h4>
