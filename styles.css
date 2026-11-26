@@ -98,3 +98,21 @@ body {
   text-align: center;
   background-color: #f1f1f1;
 }
+/* My website name and clickable logo */
+.website-name {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style my website name link */
+.website-name a {
+    color: #183B35;
+    text-decoration: none;
+}
+
+/* Change color when visitors move their mouse over it */
+.website-name a:hover {
+    color: #52796F;
+}
