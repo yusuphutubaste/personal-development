@@ -45,7 +45,36 @@ createButton.addEventListener("click", function () {
         <li>Cut back on one extra expense like eating out.</li>
       </ul>
     `;
-    // here is where I can add more suggestions here " 
+    // here is where I can add more suggestions here for example this for health.but"
+    // also let me explan what each code does here: else if
+    // here This tells JavaScript: "If the previous condition was not true, 
+    // check this new condition." for example:
+    // If the user enters money, show the Money Plan.
+    // If the user enters health, show the Health Plan.
+    // so also let undestand this to : userGoal this 
+    // is a variable that holds what the visitor typed into your Goal Planner.
+    // for example : const userGoal = goalInput.value.trim().toLowerCase();
+    // If the visitor types: I want to improve my HEALTH
+    // The variable becomes: i want to improve my health 
+    //  the .includes("health") this  checks whether the visitor's goal contains the 
+    // word "health" so it just check for example here :  the user typed 
+    // I want better health this will match yes because of it cheeck it 
+    // also   //
+
+  } else if (userGoal.includes("health")) {
+    outputArea.innerHTML = `
+      <h4>Suggested Health Plan:</h4>
+      <ul>
+        <li>Drink more water every day.</li>
+        <li>Eat healthy and balanced meals.</li>
+        <li>Get enough sleep every night.</li>
+      </ul>
+    `;
+
+    // more suggestions I can put them down here this place for me ot add more 
+    // suggestions  //
+      
+
 
     // this will be on botton and this  does 
     // not care what the user writes ,it works for
